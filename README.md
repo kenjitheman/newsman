@@ -1,4 +1,6 @@
-## newsletter tg bot in golang
+# newsman
+
+### Newsletter telegram bot in golang
 
 ###
 
@@ -6,7 +8,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="200" alt="go logo"  />
 </div>
 
-## project structure:
+## Project structure:
 
 ```go
 .
@@ -23,22 +25,22 @@
 └── users.json
 ```
 
-## installation
+## Installation
 
 ```shell
 git clone https://github.com/kenjitheman/newsman
 ```
 
-## usage
+## Usage
 
-- create .env file and inside you should create env variable with your api key:
+- Create .env file and inside you should create env variable with your api key:
 
 ```.env
 TELEGRAM_API_TOKEN=YOUR_TOKEN
 ```
 
-- then you should uncomment commented lines in tg/tg.go \
-	- **( ! you need uncomment commented lines only if you using this way !)**
+- Then you should uncomment commented lines in tg/tg.go \
+	- **( ! You need uncomment commented lines only if you using this way !)**
 
 ```go
 //"github.com/joho/godotenv"
@@ -52,7 +54,7 @@ TELEGRAM_API_TOKEN=YOUR_TOKEN
 // }
 ```
 
-- you need to add usernames(optional) and chatIDs to users.json file like this:
+- You need to add usernames(optional) and chatIDs to users.json file like this:
 
 ```json
 {
@@ -64,13 +66,13 @@ TELEGRAM_API_TOKEN=YOUR_TOKEN
 }
 ```
 
-- run it
+- Run it:
 
 ```shell
 go run main.go
 ```
 
-- or build and run
+- Or build and run:
 
 ```shell
 go build
@@ -80,7 +82,7 @@ go build
 ./newsman
 ```
 
-### you can also run it using docker
+### You can also run it using Docker
 
 ```dockerfile
 ENV TELEGRAM_API_TOKEN=YOUR_API_TOKEN
@@ -91,12 +93,11 @@ docker build -t your_image_name .
 docker run -d -p 8080:80 your_image_name
 ```
 
+## Contributing
 
-## contributing
+- Pull requests are welcome, for major changes, please open an issue first to
+  discuss what you would like to change.
 
-- pull requests are welcome, for major changes, please open an issue first to
-  discuss what you would like to change
-
-## license
+## License
 
 - [MIT](https://choosealicense.com/licenses/mit/)
