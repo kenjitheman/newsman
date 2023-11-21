@@ -27,7 +27,7 @@
 
 ## Installation
 
-```shell
+```sh
 git clone https://github.com/kenjitheman/newsman
 ```
 
@@ -68,17 +68,17 @@ TELEGRAM_API_TOKEN=YOUR_TOKEN
 
 - Run it:
 
-```shell
+```sh
 go run main.go
 ```
 
 - Or build and run:
 
-```shell
+```sh
 go build
 ```
 
-```shell
+```sh
 ./newsman
 ```
 
@@ -88,7 +88,7 @@ go build
 ENV TELEGRAM_API_TOKEN=YOUR_API_TOKEN
 ```
 
-```shell
+```sh
 docker build -t your_image_name .
 docker run -d -p 8080:80 your_image_name
 ```
