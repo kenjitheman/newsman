@@ -11,7 +11,8 @@
 ## Project structure:
 
 ```go
-.
+newsman
+│
 ├── bot
 │   ├── bot.go
 │   ├── keyboards.go
